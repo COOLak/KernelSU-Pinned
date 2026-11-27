@@ -106,13 +106,8 @@ android {
     androidResources {
         generateLocaleConfig = true
     }
-    compileSdk {
-        version =
-            release(androidCompileSdkVersion) {
-                minorApiLevel = androidCompileSdkVersionMinor
-            }
-    }
-    buildToolsVersion = androidBuildToolsVersion
+    compileSdk = 37
+    buildToolsVersion = "37.0.0"
     ndkVersion = androidCompileNdkVersion
 
     defaultConfig {

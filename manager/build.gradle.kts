@@ -12,8 +12,8 @@ val androidBuildToolsVersion by extra("37.0.0")
 val androidCompileNdkVersion: String by extra(libs.versions.ndk.get())
 val androidSourceCompatibility by extra(JavaVersion.VERSION_21)
 val androidTargetCompatibility by extra(JavaVersion.VERSION_21)
-val managerVersionCode by extra(getVersionCode())
-val managerVersionName by extra(getVersionName())
+val managerVersionCode by extra(32525)
+val managerVersionName by extra("v3.2.5-pinned")
 
 fun getGitCommitCount(): Int {
     val process = Runtime.getRuntime().exec(arrayOf("git", "rev-list", "--count", "HEAD"))

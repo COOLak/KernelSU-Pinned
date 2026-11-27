@@ -68,7 +68,7 @@ class HomeViewModel : ViewModel() {
             isSafeMode = Natives.isSafeMode,
             isLateLoadMode = Natives.isLateLoadMode,
             checkUpdateEnabled = ksuApp.getSharedPreferences("settings", Context.MODE_PRIVATE)
-                .getBoolean("check_update", true),
+                .getBoolean("check_update", false),
             latestVersionInfo = LatestVersionInfo(),
             currentManagerVersionCode = managerVersion.versionCode,
             superuserCount = getSuperuserCount(),

@@ -94,7 +94,7 @@ class ModuleViewModel(
         val prefs = ksuApp.getSharedPreferences("settings", 0)
         _uiState.update {
             it.copy(
-                checkModuleUpdate = prefs.getBoolean("module_check_update", true),
+                checkModuleUpdate = prefs.getBoolean("module_check_update", false),
                 sortEnabledFirst = prefs.getBoolean("module_sort_enabled_first", false),
                 sortActionFirst = prefs.getBoolean("module_sort_action_first", false),
             )
